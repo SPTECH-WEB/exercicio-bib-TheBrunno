@@ -64,7 +64,7 @@ public class Biblioteca {
         if(percentual == null || percentual <= 0){
             return false;
         }else{
-            this.multaDiaria += percentual+0.15;
+            this.multaDiaria += this.multaDiaria*percentual;
             return true;
         }
     }
